@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Busca ese producto en la matriz de productos y muestra su nombre y descripción en la página de detalles del producto.
     let prod_selec = PRODUCTS.find(product => product.id === parseInt(id));
     if (prod_selec) {
-        productName.textContent = prod_selec.name;
-        productDescription.textContent = prod_selec.description;
+        productName.textContent += prod_selec.name;
+        productDescription.textContent += prod_selec.description;
     }
     });
  
